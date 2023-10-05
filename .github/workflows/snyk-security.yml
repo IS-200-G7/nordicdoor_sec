@@ -52,7 +52,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           
       - name: SNYK TOKEN
-        run: echo ${{ secrets.SNYK_TOKEN }}
+        run: env; printenv
        
 
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
